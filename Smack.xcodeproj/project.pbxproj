@@ -13,6 +13,8 @@
 		2D3213D929A799B1005ADA1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3213D729A799B1005ADA1F /* Main.storyboard */; };
 		2D3213DB29A799B2005ADA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3213DA29A799B2005ADA1F /* Assets.xcassets */; };
 		2D3213DE29A799B2005ADA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3213DC29A799B2005ADA1F /* LaunchScreen.storyboard */; };
+		2D3213E729A79CEE005ADA1F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2D3213E629A79CEE005ADA1F /* Alamofire */; };
+		2D3213EA29A79D73005ADA1F /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 2D3213E929A79D73005ADA1F /* SocketIO */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3213E729A79CEE005ADA1F /* Alamofire in Frameworks */,
+				2D3213EA29A79D73005ADA1F /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = Smack;
+			packageProductDependencies = (
+				2D3213E629A79CEE005ADA1F /* Alamofire */,
+				2D3213E929A79D73005ADA1F /* SocketIO */,
+			);
 			productName = Smack;
 			productReference = 2D3213CE29A799B1005ADA1F /* Smack.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = 2D3213C529A799B1005ADA1F;
+			packageReferences = (
+				2D3213E529A79CEE005ADA1F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2D3213E829A79D73005ADA1F /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+			);
 			productRefGroup = 2D3213CF29A799B1005ADA1F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -364,6 +376,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2D3213E529A79CEE005ADA1F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		2D3213E829A79D73005ADA1F /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D3213E629A79CEE005ADA1F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D3213E529A79CEE005ADA1F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		2D3213E929A79D73005ADA1F /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D3213E829A79D73005ADA1F /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2D3213C629A799B1005ADA1F /* Project object */;
 }
