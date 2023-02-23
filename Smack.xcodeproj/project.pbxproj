@@ -15,6 +15,7 @@
 		2D3213DE29A799B2005ADA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3213DC29A799B2005ADA1F /* LaunchScreen.storyboard */; };
 		2D3213E729A79CEE005ADA1F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2D3213E629A79CEE005ADA1F /* Alamofire */; };
 		2D3213EA29A79D73005ADA1F /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 2D3213E929A79D73005ADA1F /* SocketIO */; };
+		2D3213EF29A79F03005ADA1F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3213EE29A79F03005ADA1F /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		2D3213DA29A799B2005ADA1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D3213DD29A799B2005ADA1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D3213DF29A799B2005ADA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D3213EC29A79F02005ADA1F /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
+		2D3213ED29A79F03005ADA1F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		2D3213EE29A79F03005ADA1F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 		2D3213C529A799B1005ADA1F = {
 			isa = PBXGroup;
 			children = (
+				2D3213EB29A79EED005ADA1F /* Supporting Files */,
 				2D3213D029A799B1005ADA1F /* Smack */,
 				2D3213CF29A799B1005ADA1F /* Products */,
 			);
@@ -69,6 +74,16 @@
 				2D3213DF29A799B2005ADA1F /* Info.plist */,
 			);
 			path = Smack;
+			sourceTree = "<group>";
+		};
+		2D3213EB29A79EED005ADA1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D3213ED29A79F03005ADA1F /* SWRevealViewController.h */,
+				2D3213EE29A79F03005ADA1F /* SWRevealViewController.m */,
+				2D3213EC29A79F02005ADA1F /* Smack-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +122,7 @@
 				TargetAttributes = {
 					2D3213CD29A799B1005ADA1F = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -153,6 +169,7 @@
 				2D3213D629A799B1005ADA1F /* ViewController.swift in Sources */,
 				2D3213D229A799B1005ADA1F /* AppDelegate.swift in Sources */,
 				2D3213D429A799B1005ADA1F /* SceneDelegate.swift in Sources */,
+				2D3213EF29A79F03005ADA1F /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HG8VJQPKXZ;
@@ -318,6 +336,8 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Smack-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -328,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HG8VJQPKXZ;
@@ -349,6 +370,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Smack-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
